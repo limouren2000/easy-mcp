@@ -4,8 +4,6 @@ import httpx
 
 from fastmcp import FastMCP
 
-# from mcp.server.fastmcp import FastMCP # FastMCP 包的「导入路径」在新版本更新中进行了变更，已失效，改为一级导入 from fastmcp import FastMCP。
-
 # Initialize FastMCP server
 mcp = FastMCP("weather")
 
