@@ -1,4 +1,7 @@
-# easy-mcp
+<div align="center">
+   <img width="1782" height="348" alt="image" src="https://github.com/user-attachments/assets/03ade2af-88c0-4c0d-be1e-3a50fe2cd697" />
+</div>
+
 
 ## 介绍
 本项目基于 [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) 官方示例，演示如何通过 MCP 协议实现 Agent 工具调用的核心流程。项目包含完整的服务端和客户端实现，采用 Stdio 通信模式，适合新手快速理解 MCP 协议的基本使用方式。
