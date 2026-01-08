@@ -39,7 +39,7 @@ pip install -r requirements.txt
    </div>
 
 2. **启动 MCP 客户端**
-   更改代码中的 API key 为你自己的 Qwen API，之后打开新的终端窗口，执行客户端脚本，客户端会与服务端建立通信并发起工具调用：
+   更改代码中的 API key 为你自己的 API，之后打开新的终端窗口，执行客户端脚本，客户端会与服务端建立通信并发起工具调用：
    ```bash
    python mcp_client.py
    ```
