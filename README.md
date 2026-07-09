@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 ### 3. 配置 Qwen API Key
 
-本项目的客户端示例使用通义千问 Qwen 的 OpenAI-compatible 接口。运行前需要先去 Qwen/阿里云百炼官网申请 API Key，然后替换代码里的占位符。
+本项目的客户端示例使用通义千问 Qwen 的 OpenAI-compatible 接口。运行前需要先去 Qwen/阿里云百炼官网申请 API Key，然后替换代码里的占位符。阿里云百炼通常会提供一定的免费额度，新手可以先用免费额度体验，不需要一上来就付费。
 
 1. 打开阿里云百炼 API Key 页面：https://bailian.console.aliyun.com/?apiKey=1#/api-key
 2. 登录阿里云账号，按页面提示创建 API Key。
