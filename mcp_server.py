@@ -4,6 +4,8 @@ import httpx
 
 from fastmcp import FastMCP
 
+# from mcp.server.fastmcp import FastMCP # FastMCP 包的「导入路径」在新版本更新中进行了变更，已失效，改为一级导入 from fastmcp import FastMCP。
+
 # Initialize FastMCP server
 mcp = FastMCP("weather")
 
@@ -94,7 +96,30 @@ Forecast: {period["detailedForecast"]}
 
 def main():
     # Initialize and run the server
+    """
+    stdio 模式
+    """
     mcp.run(transport="stdio")
+
+    """
+    sse 模式
+    """
+    # mcp.run(
+    #     transport="sse",
+    #     host="localhost",
+    #     port=3001,
+    #     path="/sse"
+    # )
+
+    """
+    streamable-http 模式
+    """
+    # mcp.run(
+    #     transport="streamable-http",
+    #     host="localhost",
+    #     port=8000,
+    #     path="/mcp"
+    # )
 
 
 if __name__ == "__main__":
