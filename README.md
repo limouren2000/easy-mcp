@@ -26,6 +26,23 @@ easy-mcp/
 pip install -r requirements.txt
 ```
 
+### 3. 配置 Qwen API Key
+
+本项目的客户端示例使用通义千问 Qwen 的 OpenAI-compatible 接口。运行前需要先去 Qwen/阿里云百炼官网申请 API Key，然后替换代码里的占位符。
+
+1. 打开阿里云百炼 API Key 页面：https://bailian.console.aliyun.com/?apiKey=1#/api-key
+2. 登录阿里云账号，按页面提示创建 API Key。
+3. 打开 `mcp_client.py`，把下面这一行中的占位内容替换成你自己的 API Key：
+   ```python
+   api_key="sk-换成自己的API KEY"
+   ```
+4. 替换后示例：
+   ```python
+   api_key="你的 Qwen API Key"
+   ```
+
+注意：API Key 是私密凭证，不要把自己的真实 API Key 上传到公开仓库，也不要发到截图、群聊或文章里。
+
 ## 快速开始
 ### 执行步骤（按顺序执行）
 
@@ -39,7 +56,7 @@ pip install -r requirements.txt
    </div>
 
 2. **启动 MCP 客户端**
-   更改代码中的 API key 为你自己的 API，之后打开新的终端窗口，执行客户端脚本，客户端会与服务端建立通信并发起工具调用：
+   确认已经将 `mcp_client.py` 中的 Qwen API Key 占位符替换为自己的 API Key，之后打开新的终端窗口，执行客户端脚本，客户端会与服务端建立通信并发起工具调用：
    ```bash
    python mcp_client.py
    ```
